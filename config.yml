@@ -4,7 +4,7 @@ title: Modern Man Barbershop
 theme: tella
 
 params:
-
+  googleAnalytics: GTDSQTLWR0
   defaultTheme: light
   disableThemeToggle: true
 
@@ -39,10 +39,10 @@ menu:
       url: /posts/
       weight: 10
 
-    - identifier: contact
-      name: Contact
-      url: /contact
-      weight: 60
+    - identifier: groomsman
+      name: Groomsman Package
+      url: /pages/groomsman/
+      weight: 20
 
 
 
