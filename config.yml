@@ -1,0 +1,54 @@
+baseURL: "https://www.modernmannz.com"
+languageCode: en-us
+title: Modern Man Barbershop
+theme: tella
+
+params:
+
+  defaultTheme: light
+  disableThemeToggle: true
+
+  homeInfoParams:
+      Title: Modern Man Barbershop - Christchurch City Barber and Stylists
+      Content: The Modern Man Barbershop, located in the Christchurch CBD at the Crossing next to Barkers, is a specialist barbershop dedicated to styling the modern men of Christchurch.
+      
+  socialIcons:
+  Name: facebook
+  Url: “https://facebook.com/”
+  Name: twitter
+  Url: “https://twitter.com/”
+
+  cover: 
+      linkFullImages: true
+
+  ShowBreadCrumbs: true
+
+  ShowReadingTime: true
+
+  ShowShareButtons: true
+
+  ShowPostNavLinks: true
+
+
+
+
+menu: 
+  main: 
+    - identifier: posts
+      name: Posts
+      url: /posts/
+      weight: 10
+
+    - identifier: contact
+      name: Contact
+      url: /contact
+      weight: 60
+
+
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+    extensions:
+      linkify: false
