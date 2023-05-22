@@ -232,3 +232,31 @@ label.fcf-label {
 input[type="submit"].fcf-btn-block, input[type="reset"].fcf-btn-block, input[type="button"].fcf-btn-block {
     width: 100%;
 }
+
+
+.top-banner {
+    background-image: url('/img/pages/modern-man-barbers-chch-city-team.webp');
+    background-size: cover; /* Adjust this property as per your preference */
+    background-position: center; /* Adjust this property as per your preference */
+  }
+
+.testimonial {
+    background-image: url('/img/pages/modern-man-barbers-chch-city-team.webp');
+    background-size: cover; /* Adjust this property as per your preference */
+    background-position: center; /* Adjust this property as per your preference */
+  }
+
+  .top-banner, .testimonial {
+    position: relative;
+  }
+  
+  .top-banner::before, .testimonial::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  

@@ -4,6 +4,9 @@ title: Modern Man Barbershop
 theme: tella
 
 params:
+  logo: 
+    src: "/img/modern-barbershop-chch-logo.webp"
+    alt: "modern man barbershop logo"
   googleAnalytics: GTDSQTLWR0
   defaultTheme: light
   disableThemeToggle: true
@@ -43,6 +46,26 @@ menu:
       name: Groomsman Package
       url: /pages/groomsman/
       weight: 20
+
+    - identifier: shop
+      name: Shop Mens Styling Products
+      url: /pages/shop/
+      weight: 30
+
+    - identifier: directions
+      name: 690 Colombo St - Get Directions
+      url: https://goo.gl/maps/kyqyg2kQNch4SWHu6
+      weight: 40
+
+    - identifier: number
+      name: 0800 83 83 83
+      url: tel:0800 83 83 83
+      weight: 90
+
+    - identifier: book-now
+      name: Book now
+      url: https://bookings.gettimely.com/modernman/book?uri=https%3A%2F%2Fbook.gettimely.com%2FBooking%2FLocation%2F200736%3Fmobile%3DTrue%26params%3D%25253fclient-login%25253dtrue
+      weight: 100
 
 
 
