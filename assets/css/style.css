@@ -2796,3 +2796,23 @@ input[type="submit"].fcf-btn-block, input[type="reset"].fcf-btn-block, input[typ
 .full-height {
   height: 80vh;
 }
+
+@media (max-width: 990px) {
+  .mob-reverse {
+    order:2;
+  }
+
+  .bottom-section { 
+    padding-top:30px;
+  }
+
+  .bottom-section > img {
+    margin-top: 50px;
+  }
+
+  .container a.btn-primary {
+    display:block;
+    width: 300px;
+    margin:50px auto 0px;
+  }
+}
