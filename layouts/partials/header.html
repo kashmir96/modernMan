@@ -3,7 +3,7 @@
 {{ template "_internal/google_analytics.html" . }}
 <!-- google analytics -->
     <div id="overlay">
-        <ul class="text-center list-none text-white text-3xl">
+        <ul class="text-center list-none text-white text-2xl">
             {{ range .Site.Menus.main }}
             <li class="p-2">
                 <a href="{{ .URL | safeURL }}">
@@ -12,7 +12,7 @@
             </li>
             {{ end }}
         </ul>
-       <li class="menu-cta"><a  href="https://bookings.gettimely.com/modernman/book?uri=https%3A%2F%2Fbook.gettimely.com%2FBooking%2FLocation%2F200736%3Fmobile%3DTrue%26params%3D%25253fclient-login%25253dtrue" class="btn-primary">Book now</a></li>
+       <li class="menu-cta mt-4"><a  href="https://bookings.gettimely.com/modernman/book?uri=https%3A%2F%2Fbook.gettimely.com%2FBooking%2FLocation%2F200736%3Fmobile%3DTrue%26params%3D%25253fclient-login%25253dtrue" class="btn-primary">Book now</a></li>
 
     </div>
     <nav class="flex items-center justify-between flex-wrap bg-opacity-100 p-8">

@@ -2790,8 +2790,8 @@ input[type="submit"].fcf-btn-block, input[type="reset"].fcf-btn-block, input[typ
     width: 50px;
   }
 
-  h {
-    font-size: .9em;
+  h1, h2, h3 {
+    font-size: .85em;
   }
 
 }
