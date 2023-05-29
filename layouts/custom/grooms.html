@@ -46,37 +46,38 @@
                             <img src="/img/pages/icons/book-out-barbershop-groomsman-chch.webp" alt="">
                         </div>
                         <p>Private barbershop party</p>
-                        <p>$ Price</p>
                     </div>
                     <div class="col">
                         <div class="icon">
                             <img src="/img/pages/icons/cut-and-style.webp" alt="">
                         </div>
-                        <p>Hair cut & style</p>
-                        <p>$ Price</p>
+                        <p>Consult, haircut cut & style</p>
                     </div>
                     <div class="col">
                         <div class="icon">
                         <img src="/img/pages/icons/beard-trim-barbershop.webp" alt="">
                     </div><p>Beard trims</p>
-                        <p>$ Price</p>
                     </div>
                     <div class="col">
                         <div class="icon">
                         <img src="/img/pages/icons/barbershop-razor.webp" alt="">
                     </div>
-                    <p>Straight shaves</p>
-                        <p>$ Price</p>
+                    <p>Cut throat shaves</p>
                     </div>
                     <div class="col">
                         <div class="icon">
                         <img src="/img/pages/icons/groomsman-drinks.webp" alt="">
                         </div>
-                        <p>Complementary snacks & drink</p>
-                        <p>$ Price</p>
+                    <p>Complementary snacks & drink</p>
+                    </div>
+                    <div class="col">
+                        <div class="icon">
+                        <img src="/img/pages/icons/hot.webp" alt="">
+                        </div>
+                    <p>Hot towel finish</p>
                     </div>
                 </div>
-                <a style="text-decoration:underline;" href="#">Show All</a>
+                <button class="show-more-button" style="text-decoration: underline; cursor: pointer;" onclick="toggleHiddenDivs()">Show All</button>
             </div>
         </div>
         <div class="row">
@@ -204,6 +205,30 @@
 });
 
 
+    </script>
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+  var showMoreButton = document.querySelector(".show-more-button");
+  var hiddenDivs = document.querySelectorAll(".hidden-div");
+
+  // Hide the additional divs on page load
+  hiddenDivs.forEach(function(div) {
+    div.style.display = "none";
+  });
+
+  showMoreButton.addEventListener("click", function() {
+    hiddenDivs.forEach(function(div) {
+      div.style.display = div.style.display === "none" ? "block" : "none";
+    });
+
+    // Toggle the text of the button
+    if (showMoreButton.innerText === "Show Less") {
+      showMoreButton.innerText = "Show All";
+    } else {
+      showMoreButton.innerText = "Show Less";
+    }
+  });
+});
     </script>
 </body>
 

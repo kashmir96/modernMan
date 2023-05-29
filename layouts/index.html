@@ -39,41 +39,83 @@
         <div class="row text-center">
             <div>
                 <div class="row prices ">
-                    <div class="col">
+                    <div class="col col-lg-2">
                         <div class="icon">
                             <img src="/img/pages/icons/clippers-barbershop-chch.webp" alt="">
                         </div>
-                        <p>Groomsman Package</p>
-                        <p>$ Price</p>
+                        <p>Standard Haircut</p>
+                        <p>$45</p>
                     </div>
-                    <div class="col">
+                    <div class="col col-lg-2">
                         <div class="icon">
-                            <img src="/img/pages/icons/clippers-barbershop-chch.webp" alt="">
+                            <img src="/img/pages/icons/beard-trim-barbershop.webp" alt="">
                         </div>
-                        <p>Groomsman Package</p>
-                        <p>$ Price</p>
+                        <p>Hair Cut & Beard Trim</p>
+                        <p>$65</p>
                     </div>
-                    <div class="col">
+                    <div class="col col-lg-2">
                         <div class="icon">
-                        <img src="/img/pages/icons/beard-trim-barbershop.webp" alt="">
-                    </div><p>Groomsman Package</p>
-                        <p>$ Price</p>
+                        <img src="/img/pages/icons/fade.webp" alt="">
+                    </div><p>Skin Fade</p>
+                        <p>$55</p>
                     </div>
-                    <div class="col">
+                    <div class="col col-lg-2">
                         <div class="icon">
                         <img src="/img/pages/icons/barbershop-razor.webp" alt="">
-                    </div><p>Groomsman Package</p>
-                        <p>$ Price</p>
+                    </div><p>Cut Throat & Hot Towel</p>
+                        <p>$70</p>
                     </div>
-                    <div class="col">
+                    <div class="col col-lg-2">
+                        <div class="icon">
+                        <img src="/img/pages/icons/book-out-barbershop-groomsman-chch.webp" alt="">
+                        </div>
+                        <p>Groomsman Package</p>
+                        <p>POA</p>
+                    </div>
+                    <div class="col col-lg-2">
                         <div class="icon">
                         <img src="/img/pages/icons/full-groom-barber-styling.webp" alt="">
                         </div>
-                        <p>Groomsman Package</p>
-                        <p>$ Price</p>
+                        <p>Complete Restyle</p>
+                        <p>$65</p>
+                    </div>
+                    <div class="col hidden-div">
+                        <div class="icon">
+                        <img src="/img/pages/icons/full-groom-barber-styling.webp" alt="">
+                        </div>
+                        <p>Short Hair Scissor Cut</p>
+                        <p>$65</p>
+                    </div>
+                    <div class="col hidden-div">
+                        <div class="icon">
+                        <img src="/img/pages/icons/dads.webp" alt="">
+                        </div>
+                        <p>Dads n Lads</p>
+                        <p>$85</p>
+                    </div>
+                    <div class="col hidden-div">
+                        <div class="icon">
+                        <img src="/img/pages/icons/full-groom-barber-styling.webp" alt="">
+                        </div>
+                        <p>The Executive Hair & Beard</p>
+                        <p>$115</p>
+                    </div>
+                    <div class="col hidden-div">
+                        <div class="icon">
+                        <img src="/img/pages/icons/beard-trim-barbershop.webp" alt="">
+                        </div>
+                        <p>Short Beard Trim</p>
+                        <p>$25</p>
+                    </div>
+                    <div class="col hidden-div">
+                        <div class="icon">
+                        <img style="width:200px;" src="/img/pages/icons/long.webp" alt="">
+                        </div>
+                        <p>Long Beard Trim</p>
+                        <p>$35</p>
                     </div>
                 </div>
-                <a style="text-decoration:underline;" href="#">Show All</a>
+                <button class="show-more-button" style="text-decoration: underline; cursor: pointer;" onclick="toggleHiddenDivs()">Show All</button>
             </div>
         </div>
         <div class="row">
@@ -214,8 +256,32 @@
   });
 });
 
-
-    </script>
+</script>
+     <script>
+        document.addEventListener("DOMContentLoaded", function() {
+      var showMoreButton = document.querySelector(".show-more-button");
+      var hiddenDivs = document.querySelectorAll(".hidden-div");
+    
+      // Hide the additional divs on page load
+      hiddenDivs.forEach(function(div) {
+        div.style.display = "none";
+      });
+    
+      showMoreButton.addEventListener("click", function() {
+        hiddenDivs.forEach(function(div) {
+          div.style.display = div.style.display === "none" ? "block" : "none";
+        });
+    
+        // Toggle the text of the button
+    if (showMoreButton.innerText === "Show Less") {
+      showMoreButton.innerText = "Show All";
+    } else {
+      showMoreButton.innerText = "Show Less";
+    }
+      });
+    });
+        </script>
+    
 </body>
 
 </html>

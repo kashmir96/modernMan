@@ -2613,8 +2613,8 @@ input[type="submit"].fcf-btn-block, input[type="reset"].fcf-btn-block, input[typ
   background-color: #E05F00;
   border:none;
   border-radius:22px;
-  padding: 7.5px 30px;
-  
+  padding: 10px 30px;
+  max-width: 200px;
 }
 
 .btn-primary:hover {
@@ -2743,6 +2743,11 @@ input[type="submit"].fcf-btn-block, input[type="reset"].fcf-btn-block, input[typ
   height: 80vh;
 }
 
+.hidden-div.hidden {
+  display: none;
+}
+
+
 @media (max-width: 990px) {
   .mob-reverse {
     order:2;
@@ -2762,17 +2767,18 @@ input[type="submit"].fcf-btn-block, input[type="reset"].fcf-btn-block, input[typ
     margin:50px auto 0px;
   }
 
-  .top-banner {
+  .top-banner, .testimonial {
     padding: 100px 50px;
   }
 
   
   .accordion-heading {
-    max-width: 90%;
+    max-width: 85%;
   }
   .accordion-heading:after {
     position:relative;
-    left:10%;
+    left:15%;
+    margin: auto auto;
   }
   
 }
@@ -2782,6 +2788,10 @@ input[type="submit"].fcf-btn-block, input[type="reset"].fcf-btn-block, input[typ
   
   .logo {
     width: 50px;
+  }
+
+  h {
+    font-size: .9em;
   }
 
 }
