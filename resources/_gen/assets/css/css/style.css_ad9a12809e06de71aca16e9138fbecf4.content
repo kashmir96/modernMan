@@ -2626,6 +2626,16 @@ input[type="submit"].fcf-btn-block, input[type="reset"].fcf-btn-block, input[typ
   padding-left:40px 
 }
 
+.btn-secondary { 
+  background-color: transparent;
+  color: #E05F00;
+  font-weight: 700;
+  border:1px solid #E05F00;
+  border-radius:22px;
+  padding: 10px 30px;
+  max-width: 200px;  
+}
+
 .email-form>input {
   padding:7.5px 20px;
   border-radius:22px 0px 0px 22px; 
@@ -2728,7 +2738,7 @@ input[type="submit"].fcf-btn-block, input[type="reset"].fcf-btn-block, input[typ
 }
 
 .prices .icon {
-  width: 100px; height: 100px;
+  width: 70px; height: 100px;
   display:flex;
   flex-direction:column;
   justify-content: center;
