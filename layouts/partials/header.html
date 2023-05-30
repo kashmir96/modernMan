@@ -3,7 +3,7 @@
 {{ template "_internal/google_analytics.html" . }}
 <!-- google analytics -->
     <div id="overlay">
-        <ul class="text-center list-none text-white text-2xl">
+        <ul class="text-center list-none text-white text-xl">
             {{ range .Site.Menus.main }}
             <li class="p-2">
                 <a href="{{ .URL | safeURL }}">

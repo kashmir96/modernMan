@@ -2791,7 +2791,7 @@ input[type="submit"].fcf-btn-block, input[type="reset"].fcf-btn-block, input[typ
   }
 
   h1, h2, h3 {
-    font-size: .85em;
+    font-size: .9em;
   }
 
 }
