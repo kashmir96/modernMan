@@ -2390,7 +2390,7 @@ video {
 
 /* mobile or smaller */
 @media screen and (max-width: 581px) {
-  .banner img {display:none;}
+  
 }
 
 /* tablet or smaller */
@@ -2846,6 +2846,10 @@ input[type="submit"].fcf-btn-block, input[type="reset"].fcf-btn-block, input[typ
 
   body h1, h2, h3 {
     -webkit-text-size-adjust: 80%;
+  }
+
+  .top-banner, .testimonial {
+    padding: 100px 50px;
   }
 
 }
