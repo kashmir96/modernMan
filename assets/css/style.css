@@ -2844,7 +2844,7 @@ input[type="submit"].fcf-btn-block, input[type="reset"].fcf-btn-block, input[typ
     width: 50px;
   }
 
-  body h {
+  body h1, h2, h3 {
     -webkit-text-size-adjust: 80%;
   }
 
