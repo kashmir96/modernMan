@@ -39,33 +39,37 @@ params:
 
 menu: 
   main: 
-    - identifier: posts
-      name: Posts
-      url: /posts/
-      weight: 10
 
     - identifier: groomsman
       name: Groomsman Package
       url: /pages/grooms/
-      weight: 20
+      weight: 1
 
     - identifier: shop
       name: Mens Styling Products
       url: /pages/shop/
-      weight: 30
+      weight: 2
 
     - identifier: directions
       name: Directions - 690 Colombo St
       url: https://goo.gl/maps/kyqyg2kQNch4SWHu6
       target: _blank
-      weight: 40
+      weight: 3
 
     - identifier: number
       name: 021 0801 3804
       url: tel:021 0801 3804
-      weight: 90
+      weight: 4
 
+  footer:
+    - name: Home
+      url: /
+      weight: 1
 
+    - identifier: posts
+      name: Posts
+      url: /posts/
+      weight: 2
 
 markup:
   goldmark:
