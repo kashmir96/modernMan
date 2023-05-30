@@ -2848,8 +2848,4 @@ input[type="submit"].fcf-btn-block, input[type="reset"].fcf-btn-block, input[typ
     -webkit-text-size-adjust: 80%;
   }
 
-  .top-banner, .testimonial {
-    padding: 100px 50px;
-  }
-
 }
