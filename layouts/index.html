@@ -214,12 +214,18 @@
     <!-- Add html for homepage above -->
 
     {{- partial "footer.html" . -}}
-    <!-- Messenger Chat Plugin Code -->
+    
+
     <div id="fb-root"></div>
 
     <!-- Your Chat Plugin code -->
     <div id="fb-customer-chat" class="fb-customerchat">
     </div>
+
+<!-- slow loading code folloed by Messenger Chat Plugin Code -->
+<script>
+  window.addEventListener('load', function() {
+    setTimeout(function() {
 
     <script>
       var chatbox = document.getElementById('fb-customer-chat');
@@ -244,6 +250,11 @@
         fjs.parentNode.insertBefore(js, fjs);
       }(document, 'script', 'facebook-jssdk'));
     </script>
+
+    }, 3000); // Delay in milliseconds (3 seconds)
+  });
+</script>
+
    
     <script src="{{ "/js/swiper-bundle.min.js" | relURL }}"></script>
     <script>
