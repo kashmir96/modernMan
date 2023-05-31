@@ -2773,6 +2773,11 @@ input[type="submit"].fcf-btn-block, input[type="reset"].fcf-btn-block, input[typ
   margin:0px auto;
 }
 
+.bookings {
+  width:50vw;
+  height:80vh;
+  border:none
+}
 
 
 @media (max-width: 990px) {
@@ -2825,6 +2830,12 @@ input[type="submit"].fcf-btn-block, input[type="reset"].fcf-btn-block, input[typ
     padding: 100px 15px;
   }
 
+  .bookings {
+    width:100vw;
+    height:80vh;
+    border:none
+  }
+
 }
 
 .scroll-top {
@@ -2834,3 +2845,4 @@ input[type="submit"].fcf-btn-block, input[type="reset"].fcf-btn-block, input[typ
 nav.p-8 {
   padding: 1rem  !important;
 }
+
