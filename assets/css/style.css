@@ -2881,3 +2881,6 @@ input[type="submit"].fcf-btn-block, input[type="reset"].fcf-btn-block, input[typ
 
 }
 
+.scroll-top {
+  display:none;
+}
