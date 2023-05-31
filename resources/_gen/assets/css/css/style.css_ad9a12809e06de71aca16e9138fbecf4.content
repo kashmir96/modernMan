@@ -2750,7 +2750,7 @@ input[type="submit"].fcf-btn-block, input[type="reset"].fcf-btn-block, input[typ
 }
 
 .logo {
-  width: 80px;
+  width: 50px;
 }
 
 .full-height {
@@ -2828,5 +2828,9 @@ input[type="submit"].fcf-btn-block, input[type="reset"].fcf-btn-block, input[typ
 }
 
 .scroll-top {
-  display:none;
+  display:none !important;
+}
+
+nav.p-8 {
+  padding: 1rem  !important;
 }
