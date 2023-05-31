@@ -2570,10 +2570,14 @@ input[type="submit"].fcf-btn-block, input[type="reset"].fcf-btn-block, input[typ
 }
 
 
-.top-banner {
+.top-banner, .short-banner {
   background-image: url('/img/pages/chch-city-barber-shop-chairs.webp');
   background-size: cover; /* Adjust this property as per your preference */
   background-position: center; /* Adjust this property as per your preference */
+  
+}
+
+.top-banner {
   padding: 200px 50px;
   margin: 0px !important;
 }
@@ -2588,7 +2592,7 @@ input[type="submit"].fcf-btn-block, input[type="reset"].fcf-btn-block, input[typ
 
 
 
-.top-banner::before, .testimonial::before {
+.top-banner::before, .testimonial::before, .short-banner::before {
   content: "";
   position: absolute;
   top: 0;
@@ -2757,6 +2761,19 @@ input[type="submit"].fcf-btn-block, input[type="reset"].fcf-btn-block, input[typ
   display: none;
 }
 
+.booking-embed iframe {
+  display:block;
+  margin:20px auto;
+}
+
+.short-banner {
+  position: relative;
+  color:white;
+  padding: 50px;
+  margin:0px auto;
+}
+
+
 
 @media (max-width: 990px) {
   .mob-reverse {
@@ -2809,3 +2826,4 @@ input[type="submit"].fcf-btn-block, input[type="reset"].fcf-btn-block, input[typ
   }
 
 }
+

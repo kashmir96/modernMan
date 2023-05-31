@@ -29,7 +29,7 @@
             <div class="banner-content">
                 <h1>Modern Man Barbershop<br>Cutting Edge Chch CBD Barbers</h1>
                 <p>Specialist barbers located in the heart of the Christchurch CBD</p>
-                <a class="btn btn-primary" href="https://bookings.gettimely.com/modernman/book?uri=https%3A%2F%2Fbook.gettimely.com%2FBooking%2FLocation%2F200736%3Fmobile%3DTrue%26params%3D%25253fclient-login%25253dtrue">Book now</a>
+                <a class="btn btn-primary" href="/pages/book/">Book now</a>
                 <div class="mt-4">
                     <img style="display:block; margin:0px auto; max-width: 150px;" src="/img/pages/icons/reviews.webp" alt="reviews for modern man barbershop">
                     <p>47 Reviews</p>
@@ -125,7 +125,7 @@
                 <p>“Just the usual thanks mate”</p>
                 <p>We go the extra mile to learn what you’re after and ensure every visit offers a chill break from the office, good chat, and an end result you’re stoked to leave with. </p>
                 <p>Our friendly and award winning team of barbers are available 9-5 Monday to Saturday. Walk-ins available but bookings are encouraged. </p>
-                <a class="btn btn-primary" href="https://bookings.gettimely.com/modernman/book?uri=https%3A%2F%2Fbook.gettimely.com%2FBooking%2FLocation%2F200736%3Fmobile%3DTrue%26params%3D%25253fclient-login%25253dtrue">Book now</a>
+                <a class="btn btn-primary" href="/pages/book/">Book now</a>
             </div>
             <img class="col-lg-6 col" src="/img/pages/kaywan-christchurch-city-barber.webp" alt="Kaywan, Christchurch Barber and co-owner of The Modern Man barbershop located at the Crossing Next to Barkers having a yarn with his regular client">
         </div>
@@ -143,7 +143,7 @@
                 <h2>We’ve got the chops to exceed expectations no matter what style you’re after. </h2>
                 <p>Whether you’d like the usual, or you’re keen to try something new our your dedicated barber will do everything he can to bring the vision to reality.</p>
                 <a style="text-decoration:underline;" href="https://www.instagram.com/modern.barbers/">See more of our work</a><br>
-                <a class="btn btn-primary" href="https://bookings.gettimely.com/modernman/book?uri=https%3A%2F%2Fbook.gettimely.com%2FBooking%2FLocation%2F200736%3Fmobile%3DTrue%26params%3D%25253fclient-login%25253dtrue">Book now</a>
+                <a class="btn btn-primary" href="/pages/book/">Book now</a>
             </div>
             <img class="col-lg-6 col" src="/img/pages/chch-barbers-work-modern-man.webp" alt="The work of the barber team at the Modern Man barbershop located in Barkers At the Crossing, check out the work of these chch city barbers on these clients.">
         </div>
@@ -203,7 +203,7 @@
         <div class="gray text-center row bottom-section">
             <div class="col">
                 <h2>Book now<br>to catch these hands</h2>
-                <a class="btn btn-primary" style="width: 300px; margin: 0px auto;" href="https://bookings.gettimely.com/modernman/book?uri=https%3A%2F%2Fbook.gettimely.com%2FBooking%2FLocation%2F200736%3Fmobile%3DTrue%26params%3D%25253fclient-login%25253dtrue">Book now</a>
+                <a class="btn btn-primary" style="width: 300px; margin: 0px auto;" href="/pages/book/">Book now</a>
 
             </div>
             <img class="col" src="/img/pages/modern-man-team-of-christchurch-barbers-cbd.webp" alt="team of christchurch cbd barbers, ready to be your next go-to barber">
@@ -214,6 +214,37 @@
     <!-- Add html for homepage above -->
 
     {{- partial "footer.html" . -}}
+    <!-- Messenger Chat Plugin Code -->
+    <div id="fb-root"></div>
+
+    <!-- Your Chat Plugin code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
+    </div>
+
+    <script>
+      var chatbox = document.getElementById('fb-customer-chat');
+      chatbox.setAttribute("page_id", "108991505207706");
+      chatbox.setAttribute("attribution", "biz_inbox");
+    </script>
+
+    <!-- Your SDK code -->
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          xfbml            : true,
+          version          : 'v17.0'
+        });
+      };
+
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
+   
     <script src="{{ "/js/swiper-bundle.min.js" | relURL }}"></script>
     <script>
         var mySwiper = new Swiper(".swiper-container", {
@@ -237,7 +268,7 @@
     <script type="text/javascript">
         function redirectUser() {
             setTimeout(function(){
-                window.location = "https://bookings.gettimely.com/modernman/book?uri=https%3A%2F%2Fbook.gettimely.com%2FBooking%2FLocation%2F200736%3Fmobile%3DTrue%26params%3D%25253fclient-login%25253dtrue";
+                window.location = "/pages/book/";
             }, 1000);
         }
     </script>
