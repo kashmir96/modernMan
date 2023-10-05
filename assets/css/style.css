@@ -2390,7 +2390,9 @@ video {
 
 /* mobile or smaller */
 @media screen and (max-width: 581px) {
-  
+  .mob-hide {
+    display:none;
+  }
 }
 
 /* tablet or smaller */
