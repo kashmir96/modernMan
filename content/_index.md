@@ -1,4 +1,4 @@
 ---
-Title: "NZ Bone Broth - Elevate Wellness, One Sip at a Time"
-Description: "Our premium drinkable nutrition offers a delicious and convenient way to nourish your body, crafted with care in NZ for your health and vitality."
+Title: "Modern Man Barbershop: Best Barbers Christchurch City - CHCH CBD Barbers"
+Description: "The Modern Man Barbershop, located in the Christchurch CBD at the Crossing next to Barkers, is a specialist barbershop dedicated to styling the modern men of Christchurch."
 ---
